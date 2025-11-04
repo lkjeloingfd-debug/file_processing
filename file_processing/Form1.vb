@@ -6,8 +6,9 @@ Public Class Form1
             Dim filePath As String = "sample.txt"
 
             Using writer As New StreamWriter(filePath, True) 'true means append mode
-                writer.WriteLine("Hello, this is a test file!")
-                writer.WriteLine("Second line of text.")
+                'writer.WriteLine("Hello, this is a test file!")
+                writer.WriteLine("palitan bago.")
+                writer.WriteLine(" ")
             End Using
 
             MessageBox.Show("Data written successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information) 'MesageBox.Show(content, tittle, buttonn, icon)
@@ -15,5 +16,13 @@ Public Class Form1
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
+    End Sub
+
+    Private Sub ButtonRead_Click(sender As Object, e As EventArgs) Handles ButtonRead.Click
+        Dim filepath As String = "sample.txt"
+        Using reader As New StreamReader(filepath)
+            Dim content As String = reader.ReadToEnd()
+            MessageBox.Show(content, "File Content", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Using
     End Sub
 End Class
