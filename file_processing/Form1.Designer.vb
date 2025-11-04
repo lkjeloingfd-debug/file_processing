@@ -22,29 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ButtonWrite_Click = New System.Windows.Forms.Button()
+        Me.ButtonWrite = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ButtonWrite_Click
+        'ButtonWrite
         '
-        Me.ButtonWrite_Click.Location = New System.Drawing.Point(329, 116)
-        Me.ButtonWrite_Click.Name = "ButtonWrite_Click"
-        Me.ButtonWrite_Click.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonWrite_Click.TabIndex = 0
-        Me.ButtonWrite_Click.Text = "Button1"
-        Me.ButtonWrite_Click.UseVisualStyleBackColor = True
+        Me.ButtonWrite.Location = New System.Drawing.Point(245, 171)
+        Me.ButtonWrite.Name = "ButtonWrite"
+        Me.ButtonWrite.Size = New System.Drawing.Size(197, 102)
+        Me.ButtonWrite.TabIndex = 0
+        Me.ButtonWrite.Text = "Button1"
+        Me.ButtonWrite.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ButtonWrite_Click)
+        Me.Controls.Add(Me.ButtonWrite)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents ButtonWrite_Click As Button
+    Friend WithEvents ButtonWrite As Button
 End Class
