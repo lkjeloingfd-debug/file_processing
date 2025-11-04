@@ -5,12 +5,12 @@ Public Class Form1
         Try
             Dim filePath As String = "sample.txt"
 
-            Using writer As New StreamWriter(filePath)
+            Using writer As New StreamWriter(filePath, True) 'true means append mode
                 writer.WriteLine("Hello, this is a test file!")
                 writer.WriteLine("Second line of text.")
             End Using
 
-            MessageBox.Show("Data written successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Data written successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information) 'MesageBox.Show(content, tittle, buttonn, icon)
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
